@@ -79,7 +79,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 1px 28px;
-    background: rgba(177, 148, 100, 0.86);
+    background: rgba(210, 230, 225, 0.86);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
 }
