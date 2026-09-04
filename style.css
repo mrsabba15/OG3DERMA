@@ -70,7 +70,7 @@ img {
 }
 
 .topbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -78,7 +78,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 28px;
+    padding: 1px 28px;
     background: rgba(177, 148, 100, 0.86);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
@@ -370,6 +370,7 @@ section.dark .kicker {
 
 #hero {
     background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+    padding-top: 20px;
 }
 
 .hero-grid {
