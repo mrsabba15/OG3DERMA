@@ -151,7 +151,7 @@ nav.toc a:hover {
     color: var(--teal-800);
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     nav.toc {
         position: fixed;
         top: 0;
@@ -186,8 +186,55 @@ nav.toc a:hover {
     .menu-btn {
         display: flex;
     }
-}
+} */
+/* MOBILE MENU FIX */
+@media (max-width: 900px) {
 
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav.toc {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        width: min(78vw, 320px) !important;
+        height: 100vh !important;
+
+        background: var(--teal-950) !important;
+        flex-direction: column !important;
+        padding: 100px 30px 30px !important;
+        gap: 22px !important;
+
+        transform: translateX(100%) !important;
+        transition: transform 0.35s ease !important;
+
+        z-index: 1000 !important;
+    }
+
+    nav.toc.open {
+        transform: translateX(0) !important;
+    }
+
+    nav.toc a {
+        color: var(--cream-2);
+        border-color: transparent;
+        font-size: 15px;
+    }
+
+    nav.toc a.active,
+    nav.toc a:hover {
+        color: var(--amber-soft);
+        border-color: var(--amber-soft);
+    }
+
+    .menu-btn {
+        display: flex !important;
+    }
+}
 .dotnav {
     position: fixed;
     right: 22px;
